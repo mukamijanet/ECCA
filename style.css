@@ -4,7 +4,9 @@
     box-sizing: border-box; 
      font-family: "Poppins", serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .root{
     --text-dark:#171717;
     --text-light:#525252;
@@ -28,8 +30,6 @@
     height: 100%; 
     background-image:url(./images/agm.png);
     background-position: center;
-    background-color: #003275;
-    opacity: 0.5;
     background-size: cover;
    }
 
@@ -85,32 +85,33 @@ nav {
 }
 .text-box h1{
     font-size: 50px;
-    color: green;
+    color: black;
     font-weight: 500;
     background-size: 70px;
 }
 .text-box h2{
-    font-weight: 200;
-    font-style: italic;
+    font-weight: bolder;
     margin-bottom: 50px;
     color: black;
+    font-size: 40px;
+    font-style: italic;
 }
 .btn{
     transition-duration: 0.5s;
-    color: rgb(38 149 76 );
+    color: yellow;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.25rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     --tw-border-opacity: 1;
-    border-color: rgb(38 149 76 );
     border-radius: 9999px;
     border-width: 2px;
     background-color: transparent;
     background-image: none;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    background-color: black;
 }
 .btn:hover{
     background-color: rgb(38 149 76 );
@@ -152,6 +153,7 @@ nav {
 .mission2 h1{
     margin-bottom: 15px;
     color: green;
+    margin-top: 15px;
 
 }
 .vision{
@@ -431,5 +433,33 @@ nav {
 }
 .nav-links ul{
     padding: 30px;
+}
+.state,
+.mission,
+.mission2{
+    margin-top: 50px;
+    padding: 10px;
+    margin-left: 95px;
+    height: 250px;
+    width: 70%;
+}
+.vision{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 95px;
+    position: relative;
+    padding: 10px;
+    width: 97%;
+    margin-bottom: 10px;
+}
+.team{
+    margin-top: 50px;
+   padding: 10px;
+}
+.pic-container{
+   margin-top: 50px;
+    
+
 }
 }
